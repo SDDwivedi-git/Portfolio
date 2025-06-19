@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+h2 {
+    margin-top: 2rem;
+    color: #343a40;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+footer {
+    margin-top: 2rem;
+}
