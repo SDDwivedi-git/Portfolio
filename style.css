@@ -1,17 +1,28 @@
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background: #f8f9fa;
+  color: #212529;
 }
 
 h2 {
-    margin-top: 2rem;
-    color: #343a40;
+  margin-top: 2rem;
+  color: #343a40;
+  border-bottom: 2px solid #dee2e6;
+  padding-bottom: 0.5rem;
 }
 
 section {
-    margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
-footer {
-    margin-top: 2rem;
+.badge {
+  margin-right: 0.4rem;
+  margin-bottom: 0.4rem;
+}
+
+img.rounded-circle {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
 }
