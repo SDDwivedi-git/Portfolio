@@ -26,3 +26,39 @@ img.rounded-circle {
   height: 150px;
   object-fit: cover;
 }
+
+/* Project Card Styles */
+.card-img-top {
+  object-fit: cover;
+  height: 200px;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-mode h2 {
+  color: #ffffff;
+  border-color: #444;
+}
+
+body.dark-mode .card {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border-color: #333;
+}
+
+body.dark-mode .navbar,
+body.dark-mode footer {
+  background-color: #1e1e1e !important;
+}
+
+body.dark-mode a {
+  color: #82cfff;
+}
+
+body.dark-mode a:hover {
+  color: #b3e5ff;
+}
