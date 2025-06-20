@@ -2,33 +2,59 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Shreyansh Dwivedi | Resume</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  
+  <!-- Your Style CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
 </head>
 
 <body>
+  <!-- Dark Mode Button -->
+  <div class="text-end p-2">
+    <button onclick="toggleDarkMode()" class="btn btn-sm btn-outline-secondary">Toggle Dark Mode</button>
+  </div>
+
+  <!-- Navbar -->
   <nav class="navbar navbar-dark bg-dark mb-4">
     <div class="container-fluid">
       <span class="navbar-brand mb-0 h1">Shreyansh Dwivedi</span>
     </div>
   </nav>
 
+  <!-- Main Content -->
   <div class="container">
+
+    <!-- Profile Section -->
     <div class="text-center mb-4">
       <img src="profile_picture.jpg" class="rounded-circle mb-3" alt="Profile Photo">
       <h1 class="mb-0">Python Developer | AI/ML | OCR | Django | Lawyer</h1>
       <p class="text-muted">Pune, Maharashtra, India</p>
     </div>
 
+    <!-- About Section -->
     <section id="about" data-aos="fade-up">
       <h2>About Me</h2>
       <p>Experienced developer with a passion for creating elegant AI and OCR-based solutions. Skilled in Tesseract, OpenCV, Python, Django, and cloud-native deployments. With a unique background as both a developer and lawyer, I thrive at the intersection of tech and compliance.</p>
     </section>
 
+    <!-- Experience Section -->
     <section id="experience" data-aos="fade-up">
       <h2>Experience</h2>
       <ul>
@@ -39,16 +65,43 @@
       </ul>
     </section>
 
+    <!-- Projects Section (New Cards Style) -->
     <section id="projects" data-aos="fade-up">
       <h2>Projects</h2>
-      <ul>
-        <li><strong>Sanskrit Manuscript OCR</strong> — Used Tesseract LSTM to digitize 15,000+ ancient scripts.</li>
-        <li><strong>KPN Telecom APIs</strong> — Built REST APIs using Django for Netherlands-based telecom giant.</li>
-        <li><strong>Invoice Reader</strong> — Created invoice parsing pipeline using .NET + OCR.</li>
-        <li><strong>AI Data Pipeline</strong> — Designed and deployed full NLP-based OCR workflow.</li>
-      </ul>
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <div class="card h-100">
+            <img src="images/project1.png" class="card-img-top" alt="Sanskrit Manuscript OCR">
+            <div class="card-body">
+              <h5 class="card-title">Sanskrit Manuscript OCR</h5>
+              <p class="card-text">Used Tesseract LSTM to digitize 15,000+ ancient scripts.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+          <div class="card h-100">
+            <img src="images/project2.png" class="card-img-top" alt="KPN Telecom APIs">
+            <div class="card-body">
+              <h5 class="card-title">KPN Telecom APIs</h5>
+              <p class="card-text">Built REST APIs using Django for Netherlands-based telecom giant.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+          <div class="card h-100">
+            <img src="images/project3.png" class="card-img-top" alt="Invoice Reader">
+            <div class="card-body">
+              <h5 class="card-title">Invoice Reader</h5>
+              <p class="card-text">Created invoice parsing pipeline using .NET + OCR.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
+    <!-- Skills Section -->
     <section id="skills" data-aos="fade-up">
       <h2>Skills</h2>
       <span class="badge bg-primary">Python</span>
@@ -63,6 +116,7 @@
       <span class="badge bg-primary">Agile</span>
     </section>
 
+    <!-- Certifications Section -->
     <section id="certifications" data-aos="fade-up">
       <h2>Certifications</h2>
       <ul>
@@ -72,6 +126,7 @@
       </ul>
     </section>
 
+    <!-- Publications Section -->
     <section id="publications" data-aos="fade-up">
       <h2>Publications</h2>
       <ul>
@@ -79,21 +134,32 @@
       </ul>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact" data-aos="fade-up">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:shreyanshdwivedi17@gmail.com">shreyanshdwivedi17@gmail.com</a></p>
       <p>LinkedIn: <a href="https://www.linkedin.com/in/shreyansh-dwivedi-7ab14bb6" target="_blank">linkedin.com/in/shreyansh-dwivedi</a></p>
       <p><a href="Shreyansh_JunRes_2025.pdf" download class="btn btn-secondary">Download PDF Resume</a></p>
     </section>
+
   </div>
 
+  <!-- Footer -->
   <footer class="bg-dark text-white text-center mt-5 p-3">
     &copy; 2025 Shreyansh Dwivedi
   </footer>
 
+  <!-- AOS JS -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
+  </script>
+
+  <!-- Dark Mode Script -->
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+    }
   </script>
 </body>
 
