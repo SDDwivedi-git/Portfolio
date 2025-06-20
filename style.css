@@ -62,3 +62,22 @@ body.dark-mode a {
 body.dark-mode a:hover {
   color: #b3e5ff;
 }
+
+/* Icon hover animation */
+.card i {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.card:hover i {
+  transform: scale(1.2);
+  color: #0d6efd; /* Bootstrap primary */
+}
+
+/* Optional: Dark mode icon color adjustment */
+body.dark-mode .card i {
+  color: #adb5bd;
+}
+
+body.dark-mode .card:hover i {
+  color: #0dcaf0; /* Bootstrap info */
+}
